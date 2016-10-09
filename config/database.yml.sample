@@ -1,0 +1,12 @@
+default: &default
+  adapter: mysql2
+  username: ????
+  password: ????
+
+development:
+  <<: *default
+  database: rails_4_starter_scaffold_development
+
+production:
+  <<: *default
+  database: rails_4_starter_scaffold_production
